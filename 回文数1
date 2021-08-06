@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+    int x = 0;
+    scanf("%d", &x);
+     
+        int ret=0;
+        int t = x;
+        while (t) {
+           int i = t % 10;
+            t = t / 10;
+              ret = ret * 10 + i;
+        }
+        if (x == ret&&x>0) {
+            printf("true");//return true;
+        }
+        else {
+            printf("false");//return false;
+        }
+        return 0;
+    }
+    //一位一位计算进行最后相加进行比较
+    
+
